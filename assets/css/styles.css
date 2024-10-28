@@ -1,0 +1,2246 @@
+:root{
+    --primary-color: #AAC1D9;
+    --secondary-color: #24273D;
+    --highlight-color-1: #d2eeea;
+    --highlight-color-2: #298a80;
+    --white-color: #FFFAFA;
+    --black-color: #101720;
+    --gray-color: #344b5f;
+    --gray-color-light: #D3D3D3;
+    --gray-color-mid: #B7B7B7;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.proyect__label{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 1rem;
+    border: 2px solid var(--highlight-color-1);
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: fit-content;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 75%;
+    width: 100%;
+}
+
+.layout_6,
+.layout_7,
+.layout_8,
+.layout_9,
+.layout_10,
+.layout_11{
+    width: 80%;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.layout_1,
+.layout_2,
+.layout_3, 
+.layout_4,
+.layout_5{
+    width: 90%;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+
+aside{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 25%;
+    width: 100%;
+}
+
+
+.aside__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bottom-content,
+.bottom-content-2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* PRIMER PROYECTO TAREAS */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.layout__main_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 3rem;
+}
+
+.main__title_1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.main__form_1 {
+    width: 79%;
+}
+
+.form__input_1 {
+    width: 100%;
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    margin-bottom: 4rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form__input_1::placeholder {
+    color: var(--primary-color);
+}
+
+.form__list_1 {
+    list-style: none;
+    border-radius: 5px;
+}
+
+.list__item_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.list__task_1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.task__check_1 {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--gray-color);
+    border-radius: 50%; 
+    border: none;
+    appearance: none; 
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.task__check_1:checked {
+    background-color: var(--highlight-color-2); 
+    background-image: url("../img/check.svg"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.task__text_1 {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.list__delete_1 {
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.list__delete_1:hover {
+    background-color: var(--gray-color);
+}
+
+.list__item--completed_1 .task__text_1 {
+    color: #777;
+    text-decoration: line-through;
+}
+
+/* SEGUNDO PROYECTO CARGA BLUR */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_2 {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout__main_2 {
+    width: 100%;
+    height: 704px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
+.main__background_2 {
+    content: "";
+    width: calc(100% + 4rem);
+    height: calc(100% + 4rem);
+    filter: blur(30px);
+    -webkit-filter: blur(30px);
+    background-image: url("../img/fondo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--highlight-color-2);
+}
+
+
+.main__load_2{
+    position: absolute;
+}
+
+.load__number_2 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--white-color);
+    text-align: center;
+    text-shadow: 0 0 1rem var(--black-color);
+}
+
+.load__btn_2 {
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    background-color: var(--highlight-color-2);
+    color: var(--white-color);
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.load__btn_2:hover {
+    background-color: var(--gray-color);
+}
+
+.load__complete_2 {
+    display: none;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-shadow: 0 0 1rem var(--black-color);
+}
+
+/* TERCER PROYECTO CARGA FOLLOWERS */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout__main_3 {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.main__container_3 {
+    min-width: 80%;
+}
+
+.main__title_3 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: var(--secondary-color);
+}
+
+.main__socials_3 {
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 4rem 6rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.socials__item_3 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white-color);
+}
+
+.socials__item_3 > .fa-brands {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.socials__item_3 > .fa-youtube {
+    color: #FF0000;
+}
+
+.socials__item_3 > .fa-x-twitter {
+    font-weight: 400;
+}
+
+.socials__item_3 > .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.socials__item_3 > .fa-facebook {
+    color: #1878F1;
+}
+
+.socials__number_3 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* CUARTO PROYECTO HOVER IMAGENES */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout__container_4,
+.layout__container-2_4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7rem;
+    padding: 3rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.layout__article_4 {
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.article__img_4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms linear;
+}
+
+.article__overlay_4 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 0;
+    color: var(--white-color);
+    transition: all 300ms linear;
+    transform: translateX(-35rem);
+}
+
+.layout__article_4:hover > .article__overlay_4 {
+    transform: translateX(0);
+}
+
+.layout__article--2_4:hover > .article__overlay_4 {
+    transform: translateY(17.5rem);
+}
+
+.layout__article--2_4:hover > .article__img_4 {
+    transform: translateY(-10rem);
+}
+
+.article__title_4 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.article__description_4 {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.layout__article--1_4 > .article__overlay_4 {
+    background-image: url(../img/foto-1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.layout__article--2_4 > .article__overlay_4 {
+    background-color: var(--secondary-color);
+    height: 50%;
+    position: relative;
+    bottom: 0;
+    transform: translateY(35rem);
+}
+
+.layout__article--3_4 > .article__overlay_4 {
+    background-image: url(../img/foto-3.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transform: translateX(35rem);
+}
+
+@keyframes rotate {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+    .icon-google{
+        opacity: 1;
+        font-size: 10rem;
+        color: var(--primary-color);
+    }
+
+    .rainbow:hover .icon-google{
+        opacity: 0;
+    }
+  
+  .rainbow {
+    position: relative;
+    z-index: 0;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .rainbow::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #399953;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+  }
+  
+  .rainbow::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: var(--secondary-color);
+    border-radius: 5px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+  
+  .rainbow:hover {
+    background-color: white; 
+    cursor: pointer;
+    background-image: url(../img/logo-google.png);
+    z-index: 2;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .rainbow:hover::after {
+    background: white; 
+    background-image: url(../img/logo-google.png);
+    z-index: 2;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+  
+  .glass{
+    position: relative;
+  }
+  
+  .box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 35rem;
+    background: var(--secondary-color);
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    padding: 20px;
+    }
+
+    .icon-hand{
+        opacity: 1;
+        font-size: 10rem;
+        color: var(--primary-color);
+    }
+
+    .box:hover .icon-hand{
+        opacity: 0;
+    }
+
+  .content{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+  
+  .box .content{
+    overflow: hidden;
+    position:absolute;
+    top:15px;
+    left:15px;
+    right:15px;
+    bottom:15px;
+    border:1px solid var(--primary-color);
+    padding:20px;
+    text-align:center;
+    box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  }
+
+
+  .box p {
+    opacity: 0;
+    background-image: url(../img/font-effect.webp);
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 120px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 5rem;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+  
+  .box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    
+  }
+  
+  .box span:nth-child(1)
+  {
+    transform:rotate(0deg);
+  }
+  
+  .box span:nth-child(2)
+  {
+    transform:rotate(90deg);
+  }
+  
+  .box span:nth-child(3)
+  {
+    transform:rotate(180deg);
+  }
+  
+  .box span:nth-child(4)
+  {
+    transform:rotate(270deg);
+  }
+  
+  .box span:before
+  {
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: var(--highlight-color-2);
+    animation: animate 4s linear infinite;
+  }
+
+  .box:hover{
+    cursor: pointer;
+    opacity: .8;
+  }
+
+  .box:hover p {
+    opacity: 1; 
+  }
+
+  .box:hover > span:before{
+    animation: animate 1s ease-out infinite;
+    -webkit-animation: animate 1s ease-out infinite;
+}
+  
+  @keyframes animate {
+    0% {
+    transform:scaleX(0);
+    transform-origin: left;
+    }
+    50%
+    {
+      transform:scaleX(1);
+    transform-origin: left;
+    }
+    50.1%
+    {
+      transform:scaleX(1);
+    transform-origin: right;
+      
+    }
+    
+    100%
+    {
+      transform:scaleX(0);
+    transform-origin: right;
+      
+    }
+    
+    
+  }
+  
+  .block {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 35rem;
+    height: 35rem;
+    background: var(--secondary-color);
+}
+
+.icon-cursor{
+    opacity: 1;
+    font-size: 10rem;
+    color: var(--primary-color);
+}
+
+.block:hover .icon-cursor{
+    opacity: 0;
+}
+
+
+.block:before, .block:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,       #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.block:hover{
+    cursor: pointer;
+    background: black;
+}
+
+.block:hover:before, .block:hover:after {
+    opacity: 1; 
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:after {
+    filter: blur(50px);
+}
+
+.text-effect {
+    overflow: hidden;
+    position: relative;
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    filter: contrast(110%) brightness(190%);
+}
+
+.neon {
+    opacity: 0;
+    position: relative;
+    background: black;
+    font-size: 10rem;
+    color: transparent;
+
+    &::before,
+    &::after 
+    {
+        content: attr(data-text);
+        color: white;
+        filter: blur(0.02em);
+        position: absolute;
+        top: 0; left: 0;
+        pointer-events: none;
+    }
+    
+    &::after {
+        mix-blend-mode: difference;
+    }
+    
+}
+
+.gradient,
+.spotlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.spotlight{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gradient{
+    visibility: hidden;
+    opacity: 0;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,     #0000ff, #00ff00, #ffff00, #ff0000);
+}
+
+.block:hover .neon,
+.block:hover .gradient,
+.block:hover .spotlight {
+    opacity: 1;
+    visibility: visible;
+}
+
+.block:hover .gradient {
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00, #ffff00, #ff0000);
+    mix-blend-mode: multiply;
+}
+
+.block:hover .spotlight {
+    animation: light 5s infinite linear;
+    background: 
+        radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, 
+        radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+    top: -100%; left: -100%;
+    mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+    100% {
+        transform: translate3d(50%, 50%, 0);
+    }
+}
+
+
+
+
+
+
+
+/* QUINTO PROYECTO TARJETAS PLANES */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.layout__main_5 {
+    min-width: 95rem;
+}
+
+.main__title_5 {
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.main__prices_5 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.prices__price_5 {
+    flex-basis: 33%;
+    background-color: var(--white-color);
+    padding: 4rem;
+    text-align: center;
+    margin-right: 1.5rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.prices__price_5:last-child {
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.prices__price--zoom_5 {
+    transform: scale(1.1);
+    background-color: var(--highlight-color-2);
+    border-radius: 1.5rem;
+}
+
+.prices__price--zoom_5 .price__subtitle_5,
+.prices__price--zoom_5 .price__detail_5,
+.prices__price--zoom_5 .price__number_5 {
+    color: var(--white-color);
+}
+
+.prices__price--zoom_5 .price__btn_5 {
+    color: var(--highlight-color-2);
+    background-color: var(--white-color);
+}
+
+.prices__price--zoom_5 .price__btn_5:hover {
+    color: var(--white-color);
+    background-color: transparent;
+    border: 1px solid var(--highlight-color-1);
+}
+
+.price__subtitle_5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.price__number_5 {
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.price__detail_5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--gray-color);
+    padding: 1rem 0;
+    border-top: 1px solid var(--gray-color-light);
+}
+
+.price__detail-last_5{
+    border-bottom: 1px solid var(--gray-color-light);
+}
+
+.price__btn_5 {
+    width: 100%;
+    margin-top: 3rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--highlight-color-2);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--highlight-color-2);
+}
+
+.price__btn_5:hover {
+    border: 1px solid var(--highlight-color-2);
+    background-color: transparent;
+    color: var(--highlight-color-2);
+}
+
+.main__toggle_5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.toggle__label_5 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+
+.toggle__switch_5 {
+    display: inline-block;
+    width: 5rem;
+    height: 2.8rem;
+    position: relative;
+}
+
+.toggle__checkbox_5 {
+    display: none;
+}
+
+.toggle__slider_5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: var(--gray-color-light);
+    cursor: pointer;
+    transition: all 300ms ease;
+    border-radius: 35px;
+}
+
+.toggle__slider_5::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    background-color: var(--white-color);
+    transition: all 300ms ease;
+    border-radius: 100px;
+}
+
+.toggle__checkbox_5:checked + .toggle__slider_5 {
+    background-color: var(--highlight-color-2);
+}
+
+.toggle__checkbox_5:checked + .toggle__slider_5::before {
+    transform: translateX(22px);
+}
+
+
+/* SEXTO PROYECTO TARJETA */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.layout__main_6 {
+    min-width: 20rem;
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 10px var(--highlight-color-2);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.main__user_6 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    background-color: var(--highlight-color-2);
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+.user__container-img_6 {
+    width: 13rem;
+    height: 13rem;
+    background-color: var(--white-color);
+    padding: 0.5rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    border-radius: 13rem;
+    -webkit-border-radius: 13rem;
+    -moz-border-radius: 13rem;
+    -ms-border-radius: 13rem;
+    -o-border-radius: 13rem;
+}
+
+.user__img_6 {
+    width: 100%;
+    height: 100%;
+    border-radius: 13rem;
+    -webkit-border-radius: 13rem;
+    -moz-border-radius: 13rem;
+    -ms-border-radius: 13rem;
+    -o-border-radius: 13rem;
+}
+
+.user__content_6 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.user__name_6 {
+    color: var(--white-color);
+    font-weight: 600;
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+
+.user__nick_6,
+.user__city_6 {
+    color: var(--white-color);
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.main__follows_6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.5rem;
+    padding: 3rem 4rem;
+    text-align: center;
+}
+
+.follows__follow_6 {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.follows__follow_6:hover {
+    border: 2px solid var(--primary-color);
+}
+
+.follow__number_6 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.follow__subtitle_6 {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.5;
+}
+
+/* SEPTIMO PROYECTO MENU CIRCULAR */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.layout__nav_7 {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav__list_7 {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.list__item_7 {
+    position: absolute;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.list__item_7 .fa-solid,
+.list__item_7 .fa-brands {
+    font-size: 3rem;
+    transition: all 300ms linear;
+}
+
+.list__item_7 .fa-solid:hover,
+.list__item_7 .fa-brands:hover {
+    color: var(--highlight-color-2);
+}
+
+.list__open_7 > .list__item_7:nth-child(1) {
+    transform: translate(-15rem, 6rem);
+    transition-delay: 100ms;
+}
+
+.list__open_7 > .list__item_7:nth-child(2) {
+    transform: translate(15rem, -6rem);
+    transition-delay: 400ms;
+}
+
+.list__open_7 > .list__item_7:nth-child(3) {
+    transform: translate(15rem, 6rem);
+    transition-delay: 500ms;
+}
+
+.list__open_7 > .list__item_7:nth-child(4) {
+    transform: translate(0rem, 15rem);
+    transition-delay: 600ms;
+}
+
+.list__open_7 > .list__item_7:nth-child(5) {
+    transform: translate(0rem, -15rem);
+    transition-delay: 300ms;
+}
+
+.list__open_7 > .list__item_7:nth-child(6) {
+    transform: translate(-15rem, -6rem);
+    transition-delay: 200ms;
+}
+
+.nav__btn_7 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.btn__ico-plus_7,
+.btn__ico-close_7 {
+    display: none;
+}
+
+.btn__show_7 {
+    display: inline;
+}
+
+/* OCTAVO PROYECTO CLIMA */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Estilos en cursiva */
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass/static/Overpass-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+.layout_8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout8 {
+    font-family: 'Overpass', "Roboto", 'Arial', sans-serif;
+    width: 390px;
+    height: 750px;
+    background: linear-gradient(45deg, #4A91FF 0%, #47BFDF 100%);
+    border-radius: 45px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 25px;
+    box-sizing: border-box;
+    position: relative;
+    border: 5px solid black;
+    overflow-y: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    scrollbar-color: transparent;
+}
+
+.layout8::-webkit-scrollbar{
+    background-color: transparent;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+
+
+.layout--night{
+    background: linear-gradient(45deg, #091933 0%, #224D58 100%);
+}
+
+
+.layout__search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+
+.location__icon{
+    width: 30px;
+    height: 30px;
+}
+
+
+#city {
+    width: 150px;
+    padding: 2px 5px;
+    font-size: 20px;
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#city::placeholder{
+    font-size: 18px;
+}
+
+#search__weather {
+    padding: 2px 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+    font-size: 18px;
+    text-shadow: 0px 0px 10px rgb(180, 180, 180);
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0px 0px 10px inset rgba(224, 224, 224, 0.3);
+}
+
+#search__weather:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+
+#icon__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icon__weather{
+    width: 100px;
+    height: 100px;
+}
+
+#result{
+    margin-top: 10px;
+}
+
+details > summary{
+    cursor: pointer;
+}
+
+#result,
+#result2,
+#result3,
+#result4,
+#result5 {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-shadow: 0px 0px 5px rgba(13, 12, 75, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #dddddd;
+    margin-bottom: 20px;
+}
+
+#result p {
+    margin: 5px 0;
+}
+
+.suggestion__text{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.weather__temperature{
+    font-size: 72px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 10px rgba(28, 53, 70, 0.5);
+}
+
+.weather__description{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.humidity__info,
+.wind__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wind__separator,
+.humidity__separator{
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+.wind__separator{
+    margin-left: 38px !important;
+}
+
+.humidity__icon,
+.wind__icon{
+    margin-left: 25px !important;
+    margin-right: 10px !important;
+}
+
+
+
+
+/* Elementos decorativos del celular */
+.layout::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 10px;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -ms-border-radius: 0px 0px 10px 10px;
+    -o-border-radius: 0px 0px 10px 10px;
+}
+
+
+/* NOVENO PROYECTO CRONO */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_9{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout__main_9 {
+    min-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.layout__container-crono_9 {
+    background-color: var(--highlight-color-2);
+    min-width: 45rem;
+    height: 45rem;
+    padding: 3rem;
+    border-radius: 100%;
+}
+
+.layout__crono_9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-color);
+    border: 10px solid var(--secondary-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border-left-color: transparent;
+}
+
+.crono__time_9 {
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--highlight-color-1);
+    display: flex;
+    flex-direction: row;
+}
+
+.layout__btns_9 {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.layout__btn-stop_9,
+.layout__btn-start_9,
+.layout__btn-reset_9 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+
+.layout__btn-start_9:hover,
+.layout__btn-stop_9:hover,
+.layout__btn-reset_9:hover {
+    background-color: var(--gray-color);
+}
+
+
+/* DECIMO PROYECTO EFECTO CARGA */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_10{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout__main_10{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.main__bank_10 {
+    width: 100%;
+    background-color: var(--white-color);
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+}
+
+.bank__header_10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 1.5rem;
+    border: 1px solid var(--gray-color-light);
+    box-shadow: 0px 0px 10px var(--gray-color-light);
+    border-radius: 5px;
+    margin-bottom: 4rem;
+    line-height: 1;
+}
+
+.header__number_10 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--black-color);
+}
+
+.header__money_10 {
+    font-size: 2rem;
+}
+
+.list__item_10 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--gray-color);
+    padding: 2rem 0;
+}
+
+.item__left_10 {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item__ico_10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100px;
+    border: 1px solid #6A6AEA;
+    color: #6A6AEA;
+}
+
+.item__container_10 {
+    width: 65%;
+}
+
+.item__title_10 {
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.item__date_10 {
+    font-size: 1.4rem;
+    color: var(--gray-color-mid);
+}
+
+.item__right_10 {
+    width: 35%;
+}
+
+.item__bill_10 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: right;
+    color: #CD4E4F;
+}
+
+.item__total_10 {
+    font-size: 1.4rem;
+    color: var(--gray-color-mid);
+    text-align: right;
+}
+
+@keyframes load_10 {
+    0% { background-position: 50% 0; }
+    100% { background-position: -150% 0; }
+}
+
+.bg-load_10 {
+    background-image: linear-gradient(to right, #7872EC 0%, #857FF1 10%, #8E89EC 20%, #938EE7 100%);
+    background-size: 200% 100%;
+    animation: load_10 1s linear infinite;
+}
+
+.bg-load-text_10 {
+    display: inline-block;
+    height: 1rem;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.bank__header_10 .bg-load-text_10 {
+    width: 40%;
+}
+
+.list__item_10 .bg-load-text_10 {
+    height: 1.4rem;
+}
+
+/* UNDECIMO PROYECTO GENERADOR DE CLAVES */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_11 {
+    width: 80%;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout__main_11 {
+    width: 100%;
+    padding-top: 4rem;
+}
+
+
+.main__generate_11 {
+    background-color: var(--gray-color-light);
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.generate__mail_11 {
+    font-size: 2.5rem;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.generate__icon_11 {
+    font-size: 2.1rem;
+    color: var(--highlight-color-2);
+    cursor: pointer;
+}
+
+.main__form_11 {
+    width: 100%;
+    padding: 2rem;
+    background-color: transparent;
+}
+
+.control__title_11 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.control__text_11 {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1.7rem;
+    opacity: 0.8;
+}
+
+.control__number_11 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+.control__range_11 {
+    background: var(--highlight-color-2);
+    border-radius: 0.2rem;
+    height: 0.5rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.control__range_11::-webkit-slider-thumb,
+.control__range_11::-ms-thumb,
+.control__range_11::-moz-range-thumb {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--highlight-color-2);
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.form__control_11 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.control__checkbox_11 {
+    margin-right: 1.5rem;
+    border: 2px solid var(--highlight-color-2);
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.control__checkbox_11:checked {
+    background-image: url("../img/check.svg");
+    background-size: contain;
+}
+
+.control__label_11 {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+.form__submit_11 {
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--highlight-color-2);
+    transition: all 300ms linear;
+    border-radius: 10px;
+}
+
+.form__submit_11:hover {
+    background-color: var(--gray-color);
+}
+
+.layout_11-bis{
+    min-height: 50px;
+}
+
+/* DUODECIMO PROYECTO MENU 3D */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_12 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100rem;
+    background-color: var(--primary-color);
+    perspective: 1000px;
+}
+
+.layout__nav_12 {
+    width: 100%;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    padding: 0 5rem;
+    z-index: 99;
+}
+
+.nav__btn_12 {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.btn__close_12,
+.btn__open_12 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+    color: var(--white-color);
+    background-color: var(--highlight-color-2);
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn__close_12 {
+    opacity: 0;
+    color: var(--white-color);
+}
+
+.layout__pages_12 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.pages__page_12 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.page--active_12 {
+    opacity: 1;
+}
+
+.page--home_12 {
+    background-image: url(../img/articulo-1.jpg);
+}
+
+.page--contact_12 {
+    background-image: url(../img/articulo-2.jpg);
+}
+
+.page--courses_12 {
+    background-image: url(../img/articulo-3.jpg);
+}
+
+.page__title_12 {
+    font-size: 5rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--highlight-color-2);
+}
+
+.layout__pages--show_12 {
+    width: 80%;
+    transform: scale(0.5) rotateZ(3deg) rotateX(10deg) rotateY(-18deg);
+}
+
+.layout__list_12 {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.layout__list--show_12 {
+    opacity: 1;
+}
+
+.list__item_12 {
+    color: var(--black-color);
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.list__item_12:hover {
+    opacity: 0.8;
+    color: var(--highlight-color-2);
+    transform: translateX(-2rem);
+}
+
+.nav__btn--active_12 > .btn__open_12 {
+    opacity: 0;
+}
+
+.nav__btn--active_12 > .btn__close_12 {
+    opacity: 1;
+}
+
+/* TRIGESIMO PROYECTO HOVER SCALE */
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+/**************************/
+
+.layout_13 {
+    width: 100%;
+    height: 100%;
+    min-height: 100rem;
+    position: absolute;
+}
+
+.layout__main_13 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main__article_13 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 600ms ease;
+}
+
+.main__article--left_13 {
+    background-image: url("../img/article-1.jpg");
+}
+
+.main__article--right_13 {
+    background-image: url("../img/article-2.jpg");
+}
+
+.article__title_13 {
+    background-color: var(--highlight-color-2);
+    padding: 2rem;
+    font-size: 4rem;
+    color: var(--white-color);
+    border-radius: 5px;
+}
+
+.article__btn_13 {
+    display: inline-block;
+    background-color: var(--highlight-color-2);
+    width: 13%;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 300ms linear;
+    cursor: pointer;
+}
+
+.article__btn_13:hover {
+    background-color: var(--gray-color);
+}
+
+.active_13 {
+    width: 75%;
+}
+
+.inactive_13 {
+    width: 50%;
+}
